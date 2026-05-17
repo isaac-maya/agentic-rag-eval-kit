@@ -1,14 +1,23 @@
 # Agentic AI / RAG Evaluation Kit
 
+🌐 **Live demo:** _coming soon — deploys to Hugging Face Spaces in Wave 2 rollout_
+
 This compact local artifact shows retrieval evidence, generated answers, and explicit evaluation cases. It is meant to make the quality side of RAG and agentic systems tangible without pretending a tiny demo is already production software.
 
 ## Run
 
+**Interactive (Streamlit) — recommended:**
+```bash
+pip install -r requirements.txt
+streamlit run app.py
+```
+Click a query chip or type your own. Watch retrieval scores update, evidence sentences highlight in the source, and pass/fail evaluate against expected ground truth.
+
+**CLI eval trace:**
 ```bash
 python3 rag_runner.py
 ```
-
-The command refreshes `sample_trace.md`.
+Refreshes `sample_trace.md` with the 4 eval cases.
 
 ## What It Demonstrates In 30 Seconds
 
