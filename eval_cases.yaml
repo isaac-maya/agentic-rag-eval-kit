@@ -1,0 +1,17 @@
+cases:
+  - id: refund_review
+    query: "Can the agent approve a 7000 USD refund automatically?"
+    expected_evidence: "Refund requests above 5000 USD require manager review"
+    expected_answer_contains: "manager review"
+  - id: customer_data_action
+    query: "What evidence should an agent log when it accesses customer data?"
+    expected_evidence: "log the user request, retrieved evidence, proposed action, and final reviewer"
+    expected_answer_contains: "retrieved evidence"
+  - id: escalation_speed
+    query: "How quickly should high severity customer issues be routed?"
+    expected_evidence: "within 15 minutes"
+    expected_answer_contains: "15 minutes"
+  - id: tool_call_limit
+    query: "What is the maximum number of tool calls an agent can make per session?"
+    expected_evidence: "maximum tool invocations per session"
+    expected_answer_contains: "tool call limit"
